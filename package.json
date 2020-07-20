@@ -4,7 +4,8 @@
   "description": "React, GraphQL, Apollo app that uses the SpaceX API to display launches",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "serve": "nodemon server.js"
   },
   "repository": {
     "type": "git",
