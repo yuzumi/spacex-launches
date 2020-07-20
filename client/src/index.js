@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ApolloProvider } from '@apollo/client';
 
 import App from 'App';
+import apolloClient from 'apollo-client';
 import * as serviceWorker from 'serviceWorker';
 
 import 'assets/bootstrap-lux.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={apolloClient}>
+      <App />
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
