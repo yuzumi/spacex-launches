@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/yuzumi/spacex-launches/issues"
   },
-  "homepage": "https://github.com/yuzumi/spacex-launches#readme"
+  "homepage": "https://github.com/yuzumi/spacex-launches#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0"
+  }
 }
