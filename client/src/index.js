@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { ApolloProvider } from '@apollo/client';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from 'App';
 import apolloClient from 'apollo-client';
@@ -9,11 +10,13 @@ import * as serviceWorker from 'serviceWorker';
 import 'assets/bootstrap-lux.min.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ApolloProvider client={apolloClient}>
-      <App />
-    </ApolloProvider>
-  </React.StrictMode>,
+  <StrictMode>
+    <Router>
+      <ApolloProvider client={apolloClient}>
+        <App />
+      </ApolloProvider>
+    </Router>
+  </StrictMode>,
   document.getElementById('root')
 );
 
